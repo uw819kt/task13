@@ -16,5 +16,5 @@ rails db:migrate
 ```
 Rails 6.1.7.7
 Ruby 3.3.0
-Node.js 14.4.0
+Node.js 18.16.0
 ```
