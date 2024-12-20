@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Task, type: :model do
   describe "バリデーション" do
     it "タイトルが未入力の場合、タスクのバリデーションが無効であること" do
-      task = Task.new(title: nil, description: "test", status: :todo, deadline: Time.current)
+      task = Task.new(title: nil, description: "test", status: :todo, deadline: Time.current)#変数ではない、データ→シンボル
       expect(task).to be_invalid
       expect(task.errors.full_messages).to eq ["Title can't be blank"]
     end
